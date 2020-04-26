@@ -1,0 +1,10 @@
+#!/bin/sh
+
+if
+    cmp -s if_file hoge
+    [ $? -eq 0 ]
+then
+    echo 'It is same.'
+else
+    echo 'not same'
+fi

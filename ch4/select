@@ -1,0 +1,22 @@
+PS3='コマンド? '
+select cmd in up down left right look quit
+do
+    case $cmd in
+        up)
+            echo 'UP!';;
+        down)
+            echo 'DOWN!';;
+        left)
+            echo 'LEFT!';;
+        right)
+            echo 'RIGHT!';;
+        look)
+            echo 'LOOK!';;
+        quit)
+            echo '終了します'
+            break;;
+        *)
+            echo "$REPLY"'というコマンドはありません';;
+    esac
+    echo
+done

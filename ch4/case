@@ -1,0 +1,13 @@
+#!/bin/sh
+
+case `uname -s` in
+    Darwin)
+        echo 'OSはDarwinです'
+        ;;
+    Linux)
+        echo 'OSはLinuxです'
+        ;;
+    *)
+        echo 'その他です'
+        ;;
+esac

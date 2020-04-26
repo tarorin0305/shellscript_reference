@@ -1,0 +1,7 @@
+#!/bin/sh
+
+{
+    uname -a
+    date
+    who
+} > logfile

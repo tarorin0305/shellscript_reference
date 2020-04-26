@@ -1,0 +1,23 @@
+#!/bin/sh
+
+# for file in *
+# do
+#     echo "$file"
+# done
+
+# for file in `cat filelist`
+# do
+#     if cp  -p "$file" "$file".bak
+#     then
+#         echo 'done'
+#     else
+#         `touch $file`
+#     fi
+# done
+
+for file in `cat filelist`
+do
+    `rm $file*`
+done
+
+# if [ ! -f newfile ]

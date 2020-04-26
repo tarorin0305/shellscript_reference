@@ -1,0 +1,10 @@
+#!/bin/sh
+
+# if test ! -f newfile
+# then
+#     exit 1
+# fi
+if [ ! -f newfile ]
+then
+    exit 33
+fi

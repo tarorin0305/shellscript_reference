@@ -1,0 +1,7 @@
+#!/bin/sh
+
+day0=Sunday day1=Monday day2=Tuesday
+
+today=day2
+
+eval echo \"\$$today\"
